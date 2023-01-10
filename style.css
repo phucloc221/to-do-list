@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --brg-color: #f3f5fc;
+    --text-color: #666f99;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--brg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-list {
+    background-color: #fff;
+    box-shadow: 0 0 3rem rgb(211 220 248 / 30%);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 2.6rem;
+    color: var(--text-color);
+    padding: 9px 20px;
+}
+
+.add-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.style-input {
+    font-size: 2rem;
+    padding: 12px 10px;
+    border: none;
+    background-color: var(--brg-color);
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.input-add {
+    width: 80%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: none;
+}
+
+.input-add::placeholder {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 2rem;
+    opacity: 0.5;
+}
+
+.btn-add {
+    width: 20%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background-color: var(--text-color);
+    color: var(--brg-color);
+    transition: 0.4s ease;
+}
+
+.list {
+    padding: 2px;
+}
+
+.list-now {
+    margin: 12px 0;
+    padding: 8px;
+}
+
+li {
+    cursor: pointer;
+    list-style-type: none;
+    user-select: none;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+    margin: 16px 0;
+    color: var(--text-color);
+    position: relative;
+    transition: 0.3s ease;
+}
+
+li:hover .close {
+    opacity: 1;
+}
+
+.nothing-off {
+    opacity: 0;
+    display: none;
+}
+
+.nothing {
+    color: var(--text-color);
+    font-size: 2rem;
+    padding: 20px 20px;
+    opacity: 0.7;
+    transition: 0.4s ease;
+    display: block;
+}
+
+.done {
+    text-decoration: line-through;
+    background-color: #cdcbd4;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.close {
+    font-size: 2.4rem;
+    position: absolute;
+    right: calc(0px + 1rem - 0.6rem);
+    top: 0;
+    opacity: 0;
+    padding: 6px;
+    transition: 0.4s ease;
+}
+
+.noti {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    padding: 12px 6px;
+    font-weight: 600;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e1e5fa;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a7aece;
+    border-radius: 8px;
+}
